@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
-<body background="https://www.teahub.io/photos/full/54-547089_monster-hunter-portable-3rd.jpg">
+<body background="https://getwalls.io/wallpapers/321078/2020--06--monster-hunter-4k-hd-free-download-pc.jpg">
     <div class="container">
         <br><br>
         <div class="row">
