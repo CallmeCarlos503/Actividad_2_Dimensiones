@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio_1</title>
+    <title>Ejercicio_2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
-<body background="https://wardea.com/wp-content/uploads/2022/01/Yu-Gi-Oh-Master-Duel-4.jpeg">
+<body background="https://cutewallpaper.org/21/duel-links-wallpaper/Mirror-Wall-Yu-Gi-Oh-Duel-Links-Imitation-Black-Vocaloid-.jpg">
     <div class="container">
         <br><br>
         <div class="row">
@@ -67,7 +67,20 @@
             </div>
             <div class="col">
                 <?php
-
+                $DATOS[] = [
+                    "Enero" => [8, 25, 60],
+                    "Febrero" => [25, 50, 42],
+                    "Marzo" => [30, 90, 45],
+                    "Abril" => [86, 56, 21],
+                    "Mayo" => [90, 45, 83],
+                    "Junio" => [200, 60, 47],
+                    "Julio" => [50, 23, 58],
+                    "Agosto" => [23, 21, 25],
+                    "Septiembre" => [66, 28, 87],
+                    "Ocrtubre" => [80, 26, 60],
+                    "Noviembre" => [10, 27, 45],
+                    "Diciembre" => [90, 32, 24]
+                ];
                 $Valor = 0;
                 $mes = "???";
                 $mesM = "???";
@@ -80,14 +93,14 @@
                     $mes = $I;
                     foreach ($DATOS[0][$mes] as $A => $AS) {
 
-                        if ($valor != $DATOS[0][$mes][2]) {
-                            $valor += $DATOS[0][$mes][2];
+                        if ($valor != $DATOS[0][$mes][0]) {
+                            $valor = $DATOS[0][$mes][0] + $valor;
                         }
-                        if ($ValorB < $DATOS[0][$mes][1]) {
-                            $ValorB = $DATOS[0][$mes][1];
+                        if ($ValorB < $DATOS[0][$mes][0]) {
+                            $ValorB = $DATOS[0][$mes][0];
                             $mesM = $I;
                         }
-                        if ($mes == "Junio") {
+                        if ($mes == "Enero") {
                             foreach ($DATOS[0][$mes] as $llave => $value3) {
                                 if ($valorJ > $value3) {
                                     $valorJ = $value3;
@@ -108,18 +121,22 @@
                 ?>
                 <div class="alert alert-primary" role="alert">
                     <?php
-                    echo "El promedio de las conservas fueron: " . $valor / 12;
+                    echo "El promedio de las los dulces fueron: " . round($valor / 12);
                     echo "<br>";
-                    echo "El valor mayor de bebidas fue : " . $ValorB . "$ del mes de " . "$mesM";
+                    echo "El valor mayor de produccion en conservas: " . $ValorB . " del mes de " . "$mesM";
                     echo "<br>";
-                    echo "Rubro con menor costo en Junio fue de  " . $valorJ . " en el area de: " . $producto;
+                    echo "Rubro con menor costo en Enero fue de  " . $valorJ . "$ en el area de: " . $producto;
 
                     ?>
                 </div>
             </div>
         </div>
     </div>
+
+
+
     </tbody>
+
 </body>
 
 </html>
