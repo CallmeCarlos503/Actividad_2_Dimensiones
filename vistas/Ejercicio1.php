@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col">
                 <?php
-                $DATOS[] = [
+                $DATOS[] = array(
                     "Enero" => [8, 25, 60],
                     "Febrero" => [25, 50, 42],
                     "Marzo" => [30, 90, 45],
@@ -29,7 +29,7 @@
                     "Ocrtubre" => [80, 26, 60],
                     "Noviembre" => [10, 27, 45],
                     "Diciembre" => [90, 32, 24]
-                ];
+                );
                 ?>
                 <table class="table table-dark table-striped table-hover">
                     <thead>
