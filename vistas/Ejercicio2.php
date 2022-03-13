@@ -125,7 +125,7 @@
                     echo "<br>";
                     echo "El valor mayor de produccion en conservas: " . $ValorB . " del mes de " . "$mesM";
                     echo "<br>";
-                    echo "Rubro con menor costo en Enero fue de  " . $valorJ . "$ en el area de: " . $producto;
+                    echo "Rubro con menor costo en Enero fue de  " . $valorJ . " en el area de: " . $producto;
 
                     ?>
                 </div>

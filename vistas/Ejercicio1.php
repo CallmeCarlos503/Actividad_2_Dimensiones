@@ -107,7 +107,7 @@
                     <?php
                     echo "El promedio de las conservas fueron: " . $valor / 12;
                     echo "<br>";
-                    echo "El valor mayor de bebidas fue : " . $ValorB . "$ del mes de " . "$mesM";
+                    echo "El valor mayor de bebidas fue : " . $ValorB . " del mes de " . "$mesM";
                     echo "<br>";
                     echo "Rubro con menor costo en Junio fue de  " . $valorJ . " en el area de: " . $producto;
 
