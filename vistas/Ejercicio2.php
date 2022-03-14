@@ -96,8 +96,8 @@
                         if ($valor != $DATOS[0][$mes][0]) {
                             $valor = $DATOS[0][$mes][0] + $valor;
                         }
-                        if ($ValorB < $DATOS[0][$mes][0]) {
-                            $ValorB = $DATOS[0][$mes][0];
+                        if ($ValorB < $DATOS[0][$mes][2]) {
+                            $ValorB = $DATOS[0][$mes][2];
                             $mesM = $I;
                         }
                         if ($mes == "Enero") {
