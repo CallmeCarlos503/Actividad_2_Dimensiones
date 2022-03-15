@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
-<body background="https://p4.wallpaperbetter.com/wallpaper/468/838/392/4k-artistic-5k-colors-wallpaper-thumb.jpg">
+<body background="https://i.pinimg.com/originals/39/87/eb/3987ebbc24f3b23c87ff746109f68c88.jpg">
     <div class="container">
         <br><br>
         <div class="row">
