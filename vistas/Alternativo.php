@@ -50,23 +50,23 @@
                         $ValorMM = 1000;
                         $N = 0;
                         $producto = "???";
-                        foreach ($DATOS as $Posicion1 => $Valor1) {
+                        foreach ($DATOS as $P1 => $V1) {
                             echo "<tr>";
                             echo "<td>";
-                            echo "$Posicion1";
+                            echo "$P1";
                             echo "</td>";
-                            foreach ($DATOS[$Posicion1] as $Posicion2 => $Valor2) {
+                            foreach ($DATOS[$P1] as $P2 => $V2) {
                                 echo "<td>";
-                                echo "$Valor2";
+                                echo "$V2";
                                 echo "</td>";
-                                if ($ValorM < $DATOS[$Posicion1][1]) {
-                                    $ValorM = $DATOS[$Posicion1][1];
-                                    $MesM = $Posicion1;
+                                if ($ValorM < $DATOS[$P1][1]) {
+                                    $ValorM = $DATOS[$P1][1];
+                                    $MesM = $P1;
                                 }
-                                if ($Posicion1 == "Junio") {
-                                    if ($ValorMM > $Valor2) {
-                                        $ValorMM = $Valor2;
-                                        $N = $Posicion2;
+                                if ($P1 == "Junio") {
+                                    if ($ValorMM > $V2) {
+                                        $ValorMM = $V2;
+                                        $N = $P2;
                                         if ($N == 0) {
                                             $producto = "Dulces";
                                         }
@@ -78,9 +78,9 @@
                                         }
                                     }
                                 }
-                                if ($Acumulador != $DATOS[$Posicion1][2]) {
-                                    $Acumulador = $DATOS[$Posicion1][2];
-                                    $Promedio += $DATOS[$Posicion1][2];
+                                if ($Acumulador != $DATOS[$P1][2]) {
+                                    $Acumulador = $DATOS[$P1][2];
+                                    $Promedio += $DATOS[$P1][2];
                                 }
                             }
                         }
