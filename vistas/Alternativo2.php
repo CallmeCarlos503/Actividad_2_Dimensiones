@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 1</title>
+    <title>Ejercicio 2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
@@ -50,23 +50,23 @@
                         $ValorMM = 1000;
                         $N = 0;
                         $producto = "???";
-                        foreach ($DATOS as $Posicion1 => $Valor1) {
+                        foreach ($DATOS as $P1 => $V1) {
                             echo "<tr>";
                             echo "<td>";
-                            echo "$Posicion1";
+                            echo "$P1";
                             echo "</td>";
-                            foreach ($DATOS[$Posicion1] as $Posicion2 => $Valor2) {
+                            foreach ($DATOS[$P1] as $P2 => $V2) {
                                 echo "<td>";
-                                echo "$Valor2";
+                                echo "$V2";
                                 echo "</td>";
-                                if ($ValorM < $DATOS[$Posicion1][2]) {
-                                    $ValorM = $DATOS[$Posicion1][2];
-                                    $MesM = $Posicion1;
+                                if ($ValorM < $DATOS[$P1][2]) {
+                                    $ValorM = $DATOS[$P1][2];
+                                    $MesM = $P1;
                                 }
-                                if ($Posicion1 == "Enero") {
-                                    if ($ValorMM > $Valor2) {
-                                        $ValorMM = $Valor2;
-                                        $N = $Posicion2;
+                                if ($P1 == "Enero") {
+                                    if ($ValorMM > $V2) {
+                                        $ValorMM = $V2;
+                                        $N = $P2;
                                         if ($N == 0) {
                                             $producto = "Dulces";
                                         }
@@ -78,9 +78,9 @@
                                         }
                                     }
                                 }
-                                if ($Acumulador != $DATOS[$Posicion1][0]) {
-                                    $Acumulador = $DATOS[$Posicion1][0];
-                                    $Promedio += $DATOS[$Posicion1][0];
+                                if ($Acumulador != $DATOS[$P1][0]) {
+                                    $Acumulador = $DATOS[$P1][0];
+                                    $Promedio += $DATOS[$P1][0];
                                 }
                             }
                         }
@@ -93,7 +93,7 @@
                     a) ¿En qué mes se registro el mayor costo de producción de conservas? (25%)<br>
                     en el mes de: <?php echo "$MesM"; ?>
                     <br>
-                    b) Promedio anual de los costos de producción de dulces. (25% <br>
+                    b) Promedio anual de los costos de producción de dulces. (25%) <br>
                     Su promedio es: <?php echo round($Promedio / 12); ?>
                     <br>
                     c) ¿Cuál fue el rubro que tuvo el menor costo de producción en enero? (50%)<br>
